@@ -24,7 +24,6 @@ export class AllExceptionsFilter implements ExceptionFilter {
     let status: number;
     let message: string;
 
-    // Handle validation errors separately
     if (exception instanceof BadRequestException) {
       status = exception.getStatus();
       const errorResponse = exception.getResponse();

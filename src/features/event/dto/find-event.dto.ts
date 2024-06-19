@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { CreateCityDto } from 'src/features/city/dto';
+import { CreateCityDto } from '../../city/dto';
 
 export class EventResponseDto {
   @ApiProperty({ example: 1, description: 'The ID of the event' })
